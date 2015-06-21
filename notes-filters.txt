@@ -1,0 +1,41 @@
+filters for StackEX return:
+
+
+link
+creation_date
+view_count
+owner: display_name
+owner: reputation
+
+To constrain questions returned to those with a set of tags, use the tagged parameter with a semi-colon delimited list of tags.
+
+Endpoint url:
+
+When they can't find anything, returns:
+
+{
+  "items": [],
+  "has_more": false,
+  ...
+  }
+
+  Where to find list of StackExchange API parameters:
+  https://api.stackexchange.com/docs/advanced-search
+
+  e.g.
+  tagged - a semicolon delimited list of tags, of which at least one will be present on all returned questions
+
+  closed - true to return only closed questions, false to return only open ones
+  
+
+Sorting methods, by:
+
+activity – last_activity_date
+creation – creation_date
+votes – score
+relevance – matches the relevance tab on the site itself
+
+
+  Here's how a question comes back in JSON format:
+  https://api.stackexchange.com/docs/types/question
+

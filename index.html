@@ -16,7 +16,7 @@
 				<p>This app lets you search by topic for unanswered questions on Stack Overflow to help you build your reputation.  Find unanswered questions for a topic you know about, write quality answers, and watch your reputation go up.</p>
 				<p>Sometimes, you also need some inspiration. This page also lets you search for the top answerers for a tag. If you want to rise to the top ranks for a topic, see how many reputation points you'll need to aim for!</p>
 			</div>
-		</div>
+		</div><!--end intro-->
 		<hr>
 		<div class="stack">	
 			<h3>Get Unanswered Questions</h3>
@@ -30,16 +30,17 @@
 				<input type="text" placeholder="e.g., jQuery" name="answerers" size="30"  required>
 				<input type="submit" value="Submit">
 			</form>
-		</div>
+		</div><!--end stack-->
 		<div class="results-container">
-			<div class="search-results"></div>
-			<div class="results"></div>
-		</div>
-	</div>
+			<div class="search-results"># of results will appear here</div> <!--shows number of search results-->
+			<div class="results"></div><!--displays actual results-->
+		
+		</div><!--end results-container-->
+	</div><!--end container-->
 	<div class="templates hidden">
-		<dl class="result question">
-			<dt>Question</dt>
-				<dd class="question-text"><a href="" target="_blank"></a></dd>
+		<dl class="result question"><!--NB: "dl" is a "description list"-->
+			<dt>Question</dt><!--"dt" is the term-->
+				<dd class="question-text"><a href="" target="_blank"></a></dd><!--"dd" is the description-->
 			<dt>Asked</dt>
 				<dd class="asked-date"></dd>
 			<dt>Viewed</dt>
@@ -47,9 +48,19 @@
 			<dt>Asker</dt>
 				<dd class="asker"></dd>
 		</dl>
+
+		<dl class="result answerers">
+			<!--<dt>Image</dt>
+				<dd class="answerer-image"></dd>-->
+			<dt>Answerer's Name</dt>
+				<dd class="answerer-name"><a href="" target="_blank"></a></dd>
+			<dt>Reputation</dt>
+				<dd class="answerer-reputation"></dd>
+		</dl>
+
 		<div class="error">
 			<p>Uh-oh! Something went wrong with your request. Here's what we know:</p>
-		</div>
-	</div>
+		</div><!--end error-->
+	</div><!--end templates hidden-->
 </body>
 </html>

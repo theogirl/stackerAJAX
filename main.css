@@ -1,6 +1,7 @@
 .container {
 	margin: 3em auto;
 	width: 600px;
+	/*background-color: red;*/
 }
 
 .hidden {
@@ -43,4 +44,14 @@
 .error {
 	background-color: #F78181;
 	padding: 1em;
+}
+.search-results {
+	background-color: yellow;
+	margin: 20px 0;
+	font-size: 1.2em;
+	border: 1px solid black;
+	padding: 5px;
+}
+.results {
+	background-color: pink;
 }
